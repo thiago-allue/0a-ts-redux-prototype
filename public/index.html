@@ -1,0 +1,31 @@
+/**
+ * Title: Creating Initial Layout for React App through Index.HTML
+ * 
+ * The main HTML file named `index.htmL`, serves as the backbone for a React
+ * application. It ensures application accessibility and an improved user 
+ * interaction with meta tags, viewport for responsive design, and linking
+ * the application's manifest for PWA support.
+ * The placeholder %PUBLIC_URL% signifies the actual public URL linked during 
+ * the build process. This URL can be a crucial aspect while developing or 
+ * creating a production build.
+ * Users disabling JavaScript are informed about the app's requirement for 
+ * JavaScript with the `noscript` tag.
+ * The `<div>` element with an ID "root" is important as it is the region where
+ * the React application latches on.
+ */
+const App = () => {...} // Some code for the main React app.
+
+// This holds the HTML structure of the React app.
+ReactDOM.render(
+  <React.StrictMode>
+    <App /> 
+  </React.StrictMode>,
+  document.getElementById('root') 
+);
+/**
+ * This triggers a warning about potential problems in an application during 
+ * development in a format similar to the browser console when using `StrictMode`.
+ * Your primary React component should be wrapped around it.
+ * The `ReactDOM.render()` statement is being used to render the React 
+ * Application onto the 'root' DIV in the index.html file.
+ */

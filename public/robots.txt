@@ -1,0 +1,13 @@
+/**
+ * "Robots.txt Management in TypeScript"
+ * 
+ * This TypeScript module outlines the creation and control of a "robots.txt"
+ * file, a key tool for instructing web-crawling bots on allowed site areas.
+ * These instructions impact search engine indexing and site privacy.
+ *
+ * In the demonstrated example:
+ * - "User-agent: *" means rules apply to all robots.
+ * - "Disallow: " specifies no restrictions, thus all areas are accessible.
+ */
+User-agent: *   // The user-agent "*" targets all web robots.
+Disallow:       // The empty "Disallow: " allows crawling for all pages.
